@@ -1,0 +1,403 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background:  conic-gradient(#370368, #db1bd2, #0787ff, #ff69b4);
+    
+}
+.gradient-text{
+    background-color: #ccc;}
+
+#canvas{
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    z-index: 10;
+    background-color: rgba(51,51,51,0.95); /* semi-transparent dark */
+    padding: 1em 0;
+    text-align: center;
+    border-bottom: 2px solid #333;
+}
+.navbar ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.navbar li {
+    display: inline-block;
+    margin-right: 20px;
+}
+.navbar a{
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+.navbar a:hover{
+    color: #ccc;
+}
+.live-background {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    overflow-y: auto;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.content {
+    width: 100vw;
+    min-height: 100vh;
+    color: #fff;
+    background-color: rgba(0,0,0,0.2);
+    z-index: 1;
+    box-sizing: border-box;
+    padding-top: 100px;
+}
+
+/* Center #home section and give it 70% of viewport height */
+#home {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 20px;
+    margin-top: 0;      /* Make sure this is 0 */
+    z-index: 1;
+}
+.home-section{
+    position: relative;
+    padding: 20px;
+    z-index: 1;
+}
+#home > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+#About {
+    margin-top: 40px;
+    width: 80vw;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.button-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 5px;      /* Reduced gap for closer buttons */
+    justify-content: center;
+    margin-top: 40px;
+    width: 100%;
+    place-items: center; /* Center the grid itself */
+}
+
+.glow-button {
+    position: relative;
+    background-color: rgba(255,255,255,0.18); /* More visible background */
+    border: 2px solid #fff;                  /* Visible border */
+    width: 90px;
+    height: 90px;
+    padding-bottom: 5px;
+    font-size: 1.0rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    color: #fff;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 16px;
+    box-sizing: border-box;
+    opacity: 0.95; /* More opacity */
+}
+
+.glow-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255,255,255,0.25);
+    border-radius: 16px;
+    transform: scale(0);
+    transition: all 0.3s ease-in-out;
+    z-index: 0;
+}
+
+.glow-button:hover::before {
+    transform: scale(1);
+    box-shadow: 0 0 10px rgba(255,255,255,0.5);
+}
+
+section > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    margin-top: 250px;
+}
+
+.profile-pic-frame {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 5px solid #fff;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.18);
+    margin-bottom: 16px;
+    background: #222;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-pic-frame img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+.background-image {
+    position: static;
+    left: unset;
+    bottom: unset;
+    padding-bottom: 0;
+    z-index: 1;
+    display: flex;
+    flex-direction: row;   /* Ensure horizontal layout */
+    gap: 16px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+.background-image img {
+    width: 35px;
+    height: 35px;
+    object-fit: contain;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    display: block;
+    border-radius: 20px;
+}
+#home h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 12px;
+    text-align: center;
+}
+
+#home h3 {
+    font-size: 1.5rem;
+    font-weight: 100;
+    margin-bottom: 0;
+    text-align: center;
+}
+#about h2{
+     font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 12px;
+    text-align: center;
+}
+#projects h2{
+     font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 12px;
+    text-align: center;
+}
+#contact h2{
+     font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 12px;
+    text-align: center;
+}
+#contact p{
+    margin-bottom: 12px;
+    text-align: center;
+    font-size: 1rem;
+    font-weight:bold;
+
+}
+#about {
+    font-size: 1rem;
+    font-weight:bold;
+    margin-bottom: 12px;
+    text-align: center;
+    padding: 10px;
+}
+.project-grid {
+    display: flex;
+    flex-direction: column;   /* Stack projects vertically */
+    gap: 30px;                /* Space between projects */
+    align-items: center;      /* Center the projects horizontally */
+}
+
+.project {
+    width: 80%;               /* Make each project wider */
+    max-width: 500px;
+    height: 200%;
+    background-color: #f7f7f7;
+    padding: 20px;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    color: #222;
+}
+#project p {
+    color: #333;
+}
+
+.project img {
+    width: 100%;
+    height: 200px;            /* Increased height */
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+#projects {
+    margin-bottom: 60px; /* Adds space below the projects section */
+}
+
+#contact {
+    margin-top: 0; /* Remove any extra top margin if present */
+    margin: bottom 60px; ;
+    padding-bottom: 20px;
+}
+.project-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+.project-btn {
+  padding: 6px 16px;
+  border: none;
+  border-radius: 10px;
+  background: #222;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.project-btn:hover {
+  background: #444;
+}
+.home-btn {
+  margin-top: 18px;
+  padding: 10px 28px;
+  background: transparent;
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 15px;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 0 12px 2px rgba(255,255,255,0.7);
+  transition: 
+    background 0.2s,
+    box-shadow 0.2s,
+    color 0.2s;
+}
+.home-btn:hover {
+  background: rgba(255,255,255,0.08);
+  color: #fff;
+  box-shadow: 0 0 24px 4px #fff;
+}
+
+@media (max-width: 768px) {
+  .navbar ul {
+    flex-direction: column;
+    padding: 0;
+  }
+  .navbar li {
+    display: block;
+    margin: 10px 0;
+  }
+  .content {
+    padding-top: 70px;
+  }
+  #home h1 {
+    font-size: 2rem;
+  }
+  #home h3 {
+    font-size: 1.1rem;
+  }
+  .about-content {
+    margin-top: 80px;
+    padding: 0 10px;
+  }
+  .profile-pic-frame {
+    width: 120px;
+    height: 120px;
+  }
+  .button-grid {
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    margin-top: 20px;
+  }
+  .glow-button {
+    width: 70px;
+    height: 70px;
+    font-size: 0.9rem;
+  }
+  .project-grid {
+    gap: 18px;
+  }
+  .project {
+    width: 98%;
+    max-width: 98vw;
+    padding: 10px;
+  }
+  .project img {
+    height: 120px;
+  }
+  .project-buttons {
+    flex-direction: column;
+    gap: 6px;
+    width: 100%;
+    align-items: stretch;
+  }
+  .home-btn {
+    width: 100%;
+    font-size: 1rem;
+    padding: 10px 0;
+  }
+  .background-image {
+    gap: 8px;
+  }
+  .background-image img {
+    width: 28px;
+    height: 28px;
+  }
+}
