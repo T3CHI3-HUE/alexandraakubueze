@@ -337,56 +337,44 @@ section > div {
 
 @media (max-width: 768px) {
   .navbar ul {
-    flex-direction: column;
+    flex-direction: row;           /* Make navbar horizontal */
+    justify-content: center;
+    align-items: center;
     padding: 0;
+    gap: 10px;
   }
   .navbar li {
-    display: block;
-    margin: 10px 0;
-  }
-  .content {
-    padding-top: 70px;
-  }
-  #home h1 {
-    font-size: 2rem;
-  }
-  #home h3 {
-    font-size: 1.1rem;
-  }
-  .about-content {
-    margin-top: 80px;
-    padding: 0 10px;
-  }
-  .profile-pic-frame {
-    width: 120px;
-    height: 120px;
-  }
-  .button-grid {
-    grid-template-columns: repeat(2, 1fr);
-    width: 100%;
-    margin-top: 20px;
+    display: inline-block;
+    margin: 0 6px;
   }
   .glow-button {
-    width: 70px;
-    height: 70px;
-    font-size: 0.9rem;
+    font-size: 0.8rem;             /* Reduce font size */
+    width: 60px;
+    height: 60px;
+    padding: 0;
+  }
+  .content {
+    padding: 18px 8px 18px 8px;    /* Add padding to all sides */
   }
   .project-grid {
-    gap: 18px;
+    justify-content: center;       /* Center the grid */
+    align-items: center;
   }
   .project {
-    width: 98%;
-    max-width: 98vw;
+    width: 95%;                    /* Reduce project width */
+    max-width: 350px;
     padding: 10px;
   }
-  .project img {
-    height: 120px;
-  }
   .project-buttons {
-    flex-direction: column;
+    flex-direction: row;           /* Keep buttons horizontal */
     gap: 6px;
+    justify-content: center;
     width: 100%;
-    align-items: stretch;
+  }
+  .project-btn {
+    font-size: 0.8rem;             /* Reduce button size */
+    padding: 4px 10px;
+    border-radius: 8px;
   }
   .home-btn {
     width: 100%;
