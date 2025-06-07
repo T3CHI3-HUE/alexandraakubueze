@@ -266,7 +266,7 @@ section > div {
     width: 80%;               /* Make each project wider */
     max-width: 500px;
     height: 200%;
-    background-color: #f7f7f7;
+    background-color: transparent;
     padding: 20px;
     border: 1px solid #ddd;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -278,11 +278,6 @@ section > div {
 }
 #project p {
     color: #333;
-}
-
-.project p {
-  font-weight: bold;
-  color: #fff;
 }
 
 .project img {
@@ -430,9 +425,5 @@ section > div {
   .background-image img {
     width: 28px;
     height: 28px;
-  }
-  .project p {
-    font-weight: bold;
-    color: #fff;
   }
 }
