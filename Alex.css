@@ -336,45 +336,71 @@ section > div {
 }
 
 @media (max-width: 768px) {
-  .navbar ul {
-    flex-direction: row;           /* Make navbar horizontal */
-    justify-content: center;
+  html, body {
+    width: 100vw;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    padding: 0;
-    gap: 10px;
-  }
-  .navbar li {
-    display: inline-block;
-    margin: 0 6px;
-  }
-  .glow-button {
-    font-size: 0.8rem;             /* Reduce font size */
-    width: 60px;
-    height: 60px;
-    padding: 0;
+    justify-content: center;
+    box-sizing: border-box;
   }
   .content {
-    padding: 18px 8px 18px 8px;    /* Add padding to all sides */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 18px 8px 18px 8px;
+    width: 100vw;
+    min-height: 100vh;
+    box-sizing: border-box;
   }
-  .project-grid {
-    justify-content: center;       /* Center the grid */
+  .home-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 60vh;
+    text-align: center;
+    width: 100%;
+  }
+  .home-section > div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
     align-items: center;
   }
+  .project-grid {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
   .project {
-    width: 95%;                    /* Reduce project width */
+    width: 95%;
     max-width: 350px;
     padding: 10px;
+    background-color: transparent;
+    margin-left: auto;
+    margin-right: auto;
   }
   .project-buttons {
-    flex-direction: row;           /* Keep buttons horizontal */
+    flex-direction: row;
     gap: 6px;
     justify-content: center;
     width: 100%;
   }
   .project-btn {
-    font-size: 0.8rem;             /* Reduce button size */
+    font-size: 0.8rem;
     padding: 4px 10px;
     border-radius: 8px;
+  }
+  .glow-button {
+    font-size: 0.8rem;
+    width: 60px;
+    height: 60px;
+    padding: 0;
   }
   .home-btn {
     width: 100%;
@@ -383,6 +409,7 @@ section > div {
   }
   .background-image {
     gap: 8px;
+    justify-content: center;
   }
   .background-image img {
     width: 28px;
