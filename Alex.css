@@ -280,6 +280,11 @@ section > div {
     color: #333;
 }
 
+.project p {
+  font-weight: bold;
+  color: #fff;
+}
+
 .project img {
     width: 100%;
     height: 200px;            /* Increased height */
@@ -333,6 +338,17 @@ section > div {
   background: rgba(255,255,255,0.08);
   color: #fff;
   box-shadow: 0 0 24px 4px #fff;
+}
+
+/* Desktop and mobile: Hover effect for h3 in .project */
+.project h3 {
+  transition: color 0.2s, text-shadow 0.2s;
+  cursor: pointer;
+}
+
+.project h3:hover {
+  color: #0078ff;
+  text-shadow: 0 2px 12px rgba(0,120,255,0.25);
 }
 
 @media (max-width: 768px) {
@@ -414,5 +430,9 @@ section > div {
   .background-image img {
     width: 28px;
     height: 28px;
+  }
+  .project p {
+    font-weight: bold;
+    color: #fff;
   }
 }
