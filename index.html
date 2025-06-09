@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alexandra Akubueze</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="gradient-bg text-white min-h-screen">
+    <!-- Navigation -->
+    <nav
+      class="fixed top-0 left-0 right-0 z-50 bg-black/20 backdrop-blur-lg border-b border-white/10"
+    >
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-16">
+          <div class="flex-shrink-0">
+            <span class="text-xl font-bold tracking-tight">AA</span>
+          </div>
+          <!-- Desktop Menu -->
+          <div class="hidden md:block">
+            <div class="ml-10 flex items-baseline space-x-8">
+              <a
+                href="#home"
+                class="hover:text-indigo-300 transition-colors px-3 py-2"
+                >Home</a
+              >
+              <a
+                href="#projects"
+                class="hover:text-indigo-300 transition-colors px-3 py-2"
+                >Projects</a
+              >
+              <a
+                href="#about"
+                class="hover:text-indigo-300 transition-colors px-3 py-2"
+                >About</a
+              >
+              <a
+                href="#contact"
+                class="hover:text-indigo-300 transition-colors px-3 py-2"
+                >Contact</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Mobile Menu Button (Moved Outside Nav) -->
+    <div class="md:hidden fixed top-4 right-4 z-[3000]">
+      <div
+        class="hamburger"
+        id="hamburger"
+        aria-label="Toggle mobile menu"
+        aria-expanded="false"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu" id="mobileMenu">
+      <nav>
+        <a href="#home" onclick="closeMobileMenu()">Home</a>
+        <a href="#projects" onclick="closeMobileMenu()">Projects</a>
+        <a href="#about" onclick="closeMobileMenu()">About</a>
+        <a href="#contact" onclick="closeMobileMenu()">Contact</a>
+      </nav>
+    </div>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu" id="mobileMenu">
+      <nav>
+        <a href="#home" onclick="closeMobileMenu()">Home</a>
+        <a href="#projects" onclick="closeMobileMenu()">Projects</a>
+        <a href="#about" onclick="closeMobileMenu()">About</a>
+        <a href="#contact" onclick="closeMobileMenu()">Contact</a>
+      </nav>
+    </div>
+
+    <!-- Hero Section -->
+    <section
+      id="home"
+      class="min-h-screen flex items-center justify-center px-4 pt-16 relative z-10"
+    >
+      <div class="text-center max-w-4xl mx-auto">
+        <div class="floating">
+          <h1
+            class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white tracking-tight mb-6 fade-in-up"
+          >
+            Alexandra Akubueze
+          </h1>
+        </div>
+        <p
+          class="text-lg sm:text-xl md:text-2xl text-indigo-200 max-w-2xl mx-auto mb-8 fade-in-up stagger-1"
+        >
+          Frontend Developer & Video Editor<br class="hidden sm:block" />
+          <span class="text-white/80"
+            >Bringing ideas to life with code and creativity</span
+          >
+        </p>
+        <div
+          class="flex flex-col sm:flex-row gap-4 justify-center fade-in-up stagger-2"
+        >
+          <a
+            href="#projects"
+            class="inline-block bg-indigo-600 hover:bg-indigo-700 transition-all duration-300 text-white font-semibold py-3 px-8 rounded-xl shadow-lg neon-glow transform hover:scale-105"
+          >
+            View My Work
+          </a>
+          <a
+            href="#contact"
+            class="inline-block border-2 border-white/30 hover:border-white/70 transition-all duration-300 text-white font-semibold py-3 px-8 rounded-xl backdrop-blur-sm hover:bg-white/10 transform hover:scale-105"
+          >
+            Get in Touch
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section
+      id="projects"
+      class="py-16 sm:py-20 px-4 relative z-20 bg-gradient-to-b from-transparent via-black/10 to-transparent"
+    >
+      <div class="max-w-7xl mx-auto">
+        <h2
+          class="text-3xl sm:text-4xl md:text-5xl font-semibold text-center mb-4 fade-in-up"
+        >
+          Featured Projects
+        </h2>
+        <p
+          class="text-center text-indigo-200 mb-16 fade-in-up stagger-1 max-w-2xl mx-auto"
+        >
+          A collection of my latest work showcasing frontend development and
+          video editing excellence
+        </p>
+
+        <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+          <!-- Project Card 1 -->
+          <div
+            class="glass-card rounded-2xl shadow-2xl p-6 sm:p-8 project-card fade-in-left"
+          >
+            <div
+              class="h-2 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-full mb-6"
+            ></div>
+            <h3 class="text-xl sm:text-2xl font-semibold text-white mb-4">
+              Huddle Landing Page
+            </h3>
+            <p class="text-gray-300 mb-6 leading-relaxed">
+              A static landing page of a company, that shows that displays thier
+              services to thier audience.
+            </p>
+            <div class="flex flex-wrap gap-2 mb-6">
+              <span
+                class="px-3 py-1 bg-indigo-500/20 text-indigo-300 rounded-full text-sm"
+                >HTML</span
+              >
+              <span
+                class="px-3 py-1 bg-purple-500/20 text-purple-300 rounded-full text-sm"
+                >CSS</span
+              >
+            </div>
+            <a
+              href="https://huddle-tawny-three.vercel.app/"
+              target="_blank"
+              class="text-indigo-400 hover:text-indigo-300 transition-colors font-medium"
+            >
+              View Project →
+            </a>
+          </div>
+
+          <!-- Project Card 2 -->
+          <div
+            class="glass-card rounded-2xl shadow-2xl p-6 sm:p-8 project-card fade-in-up stagger-1"
+          >
+            <div
+              class="h-2 bg-gradient-to-r from-pink-500 to-rose-500 rounded-full mb-6"
+            ></div>
+            <h3 class="text-xl sm:text-2xl font-semibold text-white mb-4">
+              Alexander Portfolio Page
+            </h3>
+            <p class="text-gray-300 mb-6 leading-relaxed">
+              A responsive portfolio page for a web developer and video editor
+            </p>
+            <div class="flex flex-wrap gap-2 mb-6">
+              <span
+                class="px-3 py-1 bg-pink-500/20 text-pink-300 rounded-full text-sm"
+                >HTML</span
+              >
+              <span
+                class="px-3 py-1 bg-rose-500/20 text-rose-300 rounded-full text-sm"
+                >CSS</span
+              >
+              <span
+                class="px-3 py-1 bg-orange-500/20 text-orange-300 rounded-full text-sm"
+                >Javascript</span
+              >
+            </div>
+            <a
+              href="https://alexandraakubueze.vercel.app/"
+              target="_blank"
+              class="text-pink-400 hover:text-pink-300 transition-colors font-medium"
+            >
+              View Project →
+            </a>
+          </div>
+
+          <!-- Project Card 3 -->
+          <div
+            class="glass-card rounded-2xl shadow-2xl p-6 sm:p-8 project-card fade-in-right md:col-span-2 lg:col-span-1"
+          >
+            <div
+              class="h-2 bg-gradient-to-r from-emerald-500 to-teal-500 rounded-full mb-6"
+            ></div>
+            <h3 class="text-xl sm:text-2xl font-semibold text-white mb-4">
+              Perpetual Portfolio Page
+            </h3>
+            <p class="text-gray-300 mb-6 leading-relaxed">
+              A responsive portfolio page for an accountant, data analyst and
+              public speaker. The page displays her prowress in her various
+              fields and a resume page, that shows track record of her progress.
+            </p>
+            <div class="flex flex-wrap gap-2 mb-6">
+              <span
+                class="px-3 py-1 bg-emerald-500/20 text-emerald-300 rounded-full text-sm"
+                >HTML</span
+              >
+              <span
+                class="px-3 py-1 bg-teal-500/20 text-teal-300 rounded-full text-sm"
+                >CSS</span
+              >
+              <span
+                class="px-3 py-1 bg-cyan-500/20 text-cyan-300 rounded-full text-sm"
+                >Javascript</span
+              >
+            </div>
+            <a
+              href="https://perpetualvandu.vercel.app/"
+              target="_blank"
+              class="text-emerald-400 hover:text-emerald-300 transition-colors font-medium"
+            >
+              View Site →
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 sm:py-20 px-4 bg-black/20">
+      <div class="max-w-6xl mx-auto">
+        <h2
+          class="text-3xl sm:text-4xl md:text-5xl font-semibold mb-12 text-center fade-in-up"
+        >
+          About Alexandra
+        </h2>
+
+        <!-- Profile Picture and Content Container -->
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+          <!-- Profile Picture -->
+          <div class="flex justify-between ml-10 md:justify-end fade-in-left">
+            <div class="relative">
+              <div
+                class="w-80 h-80 rounded-2xl overflow-hidden shadow-2xl transform hover:scale-105 transition-all duration-500"
+              >
+                <img
+                  src="alex.jpg"
+                  alt="Alexandra Akubueze"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+              <!-- Decorative border -->
+              <div
+                class="absolute -inset-4 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-2xl opacity-20 blur-lg"
+              ></div>
+            </div>
+          </div>
+
+          <!-- Text Content -->
+          <div class="text-center fade-in-right">
+            <p class="text-lg sm:text-xl text-gray-300 leading-relaxed mb-8">
+              I'm a passionate frontend developer and video editor who believes
+              in the power of combining technology with creativity. With
+              expertise in modern web technologies and professional video
+              editing tools, I create digital experiences that not only look
+              stunning but also tell compelling stories.
+            </p>
+
+            <!-- Stats Grid -->
+            <div class="grid grid-cols-2 gap-8 mb-8">
+              <div class="text-center">
+                <div class="text-3xl font-bold text-indigo-400 mb-2">5+</div>
+                <div class="text-gray-400">Projects Completed</div>
+              </div>
+              <div class="text-center">
+                <div class="text-3xl font-bold text-purple-400 mb-2">2+</div>
+                <div class="text-gray-400">Years Experience</div>
+              </div>
+              <div class="text-center">
+                <div class="text-3xl font-bold text-pink-400 mb-2">10+</div>
+                <div class="text-gray-400">Videos Edited</div>
+              </div>
+              <div class="text-center">
+                <div class="text-3xl font-bold text-emerald-400 mb-2">8+</div>
+                <div class="text-gray-400">Happy Clients</div>
+              </div>
+            </div>
+
+            <!-- Skills Tags -->
+            <div class="flex flex-wrap gap-3 justify-center align-items-center">
+              <span
+                class="px-4 py-2 bg-indigo-500/20 text-indigo-300 rounded-full text-sm font-medium"
+                >HTML</span
+              >
+              <span
+                class="px-4 py-2 bg-purple-500/20 text-purple-300 rounded-full text-sm font-medium"
+                >CSS</span
+              >
+              <span
+                class="px-4 py-2 bg-pink-500/20 text-pink-300 rounded-full text-sm font-medium"
+                >Javascript</span
+              >
+              <span
+                class="px-4 py-2 bg-emerald-500/20 text-emerald-300 rounded-full text-sm font-medium"
+                >Git</span
+              >
+              <span
+                class="px-4 py-2 bg-blue-500/20 text-blue-300 rounded-full text-sm font-medium"
+                >Adobe Premier Pro</span
+              >
+              <span
+                class="px-4 py-2 bg-red-500/20 text-red-300 rounded-full text-sm font-medium"
+                >Capcut</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 sm:py-20 px-4">
+      <div class="max-w-4xl mx-auto text-center">
+        <h2
+          class="text-3xl sm:text-4xl md:text-5xl font-semibold mb-6 fade-in-up"
+        >
+          Let's Create Something Divine
+        </h2>
+        <p
+          class="text-lg sm:text-xl text-indigo-200 max-w-2xl mx-auto mb-12 fade-in-up stagger-1"
+        >
+          Whether it's cutting-edge code or cinematic cuts, I'm ready to bring
+          your vision to life. Let's collaborate and create something
+          extraordinary together.
+        </p>
+
+        <div
+          class="flex flex-col sm:flex-row gap-6 justify-center items-center fade-in-up stagger-2"
+        >
+          <a
+            href="https://wa.me/2348186440087"
+            target="_blank"
+            class="inline-block bg-indigo-600 hover:bg-indigo-700 transition-all duration-300 text-white font-semibold py-4 px-8 rounded-xl shadow-lg neon-glow transform hover:scale-105 w-full sm:w-auto"
+          >
+            Send Message
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer
+      class="py-8 px-4 text-center text-sm text-gray-400 border-t border-white/10"
+    >
+      <div class="max-w-4xl mx-auto">
+        <p>&copy; 2025 Alexandra Akubueze. All rights reserved.</p>
+        <p class="mt-2">Crafted with ❤️ and lots of coffee</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
