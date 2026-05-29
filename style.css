@@ -17,11 +17,12 @@ h3 {
 }
 
 :root {
-  --cream: #fff6ed;
-  --gold: #d2a679;
-  --umber: #8b5e3c;
-  --charcoal: #2e1a0f;
+  --cream: #3f1414;
+  --gold: #550015;
+  --umber: #800022;
+  --charcoal: #940128;
 }
+
 
 .gradient-bg {
   background: linear-gradient(
