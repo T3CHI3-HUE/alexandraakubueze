@@ -16,18 +16,25 @@ h3 {
   font-family: "Playfair Display", serif;
 }
 
+:root {
+  --cream: #fff6ed;
+  --gold: #d2a679;
+  --umber: #8b5e3c;
+  --charcoal: #2e1a0f;
+}
+
 .gradient-bg {
   background: linear-gradient(
     135deg,
-    #0f0f23 0%,
-    #1a1a2e 25%,
-    #16213e 50%,
-    #0f3460 75%,
-    #533483 100%
+    var(--cream) 0%,
+    var(--gold) 30%,
+    var(--umber) 60%,
+    var(--charcoal) 100%
   );
-  background-size: 400% 400%;
-  animation: gradientShift 15s ease infinite;
+  background-size: 300% 300%;
+  animation: gradientShift 18s ease infinite;
 }
+
 
 @keyframes gradientShift {
   0% {
@@ -42,10 +49,12 @@ h3 {
 }
 
 .glass-card {
-  background: rgba(255, 255, 255, 0.08);
-  backdrop-filter: blur(20px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 246, 237, 0.35);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(210, 166, 121, 0.45);
 }
+
+
 
 .hamburger {
   width: 28px;
@@ -111,7 +120,7 @@ h3 {
   height: 100vh;
   background: rgba(0, 0, 0, 0.95);
   backdrop-filter: blur(20px);
-  z-index: 100;
+  z-index: 2000;
   opacity: 0;
   visibility: hidden;
   transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
@@ -238,13 +247,14 @@ h3 {
 }
 
 .neon-glow {
-  box-shadow: 0 0 20px rgba(129, 140, 248, 0.3);
+  box-shadow: 0 0 22px rgba(210, 166, 121, 0.35);
   transition: all 0.3s ease;
 }
 
 .neon-glow:hover {
-  box-shadow: 0 0 40px rgba(129, 140, 248, 0.6);
+  box-shadow: 0 0 48px rgba(210, 166, 121, 0.65);
 }
+
 
 @media (max-width: 768px) {
   .mobile-menu a {

@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Alexandra Akubueze</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <script> src="https://cdn.jsdeliver.net/npm/@tailwindcss/browser@4" </script>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body class="gradient-bg text-white min-h-screen">
+  <body class="gradient-bg min-h-screen text-gray-900">
     <!-- Navigation -->
     <nav
-      class="fixed top-0 left-0 right-0 z-50 bg-black/20 backdrop-blur-lg border-b border-white/10"
+      class="fixed top-0 left-0 right-0 z-50 backdrop-blur-lg border-b border-[rgba(210,166,121,0.35)] bg-[rgba(255,246,237,0.55)]"
     >
+
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between items-center h-16">
           <div class="flex-shrink-0">
@@ -42,7 +42,6 @@
                 >Contact</a
               >
             </div>
-          </div>
         </div>
       </div>
     </nav>
@@ -59,16 +58,6 @@
         <span></span>
         <span></span>
       </div>
-    </div>
-
-    <!-- Mobile Menu Overlay -->
-    <div class="mobile-menu" id="mobileMenu">
-      <nav>
-        <a href="#home" onclick="closeMobileMenu()">Home</a>
-        <a href="#projects" onclick="closeMobileMenu()">Projects</a>
-        <a href="#about" onclick="closeMobileMenu()">About</a>
-        <a href="#contact" onclick="closeMobileMenu()">Contact</a>
-      </nav>
     </div>
 
     <!-- Mobile Menu Overlay -->
@@ -144,6 +133,7 @@
           <div
             class="glass-card rounded-2xl shadow-2xl p-6 sm:p-8 project-card fade-in-left"
           >
+
             <div
               class="h-2 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-full mb-6"
             ></div>
@@ -157,8 +147,8 @@
               Huddle Landing Page
             </h3>
             <p class="text-gray-300 mb-6 leading-relaxed">
-              A static landing page of a company, that shows that displays thier
-              services to thier audience.
+              A static landing page of a company that displays their
+              services to their audience.
             </p>
             <div class="flex flex-wrap gap-2 mb-6">
               <span
@@ -267,12 +257,143 @@
               View Site →
             </a>
           </div>
+
+          <!-- Project Card 4: Chess Master Lab -->
+          <div
+            class="glass-card rounded-2xl shadow-2xl p-6 sm:p-8 project-card fade-in-left"
+          >
+            <div
+              class="h-2 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-full mb-6"
+            ></div>
+            <!-- Project Image -->
+            <img
+              src="images/IMG_1373.jpg"
+
+              alt="Chess Master Lab"
+              class="w-full h-40 object-cover rounded-xl mb-6"
+            />
+            <h3 class="text-xl sm:text-2xl font-semibold text-white mb-4">
+              Chess Master Lab
+            </h3>
+            <p class="text-gray-300 mb-6 leading-relaxed">
+              A well structured web-app aimed for educational purposes. To teach and build players in the game of chess.
+              It has a tutorial section and a game field area for a step by step instructional class. It then progresses to 
+              possess a real game arena with 3 different levels of play to build players skills.
+            </p>
+            <div class="flex flex-wrap gap-2 mb-6">
+              <span
+                class="px-3 py-1 bg-indigo-500/20 text-indigo-300 rounded-full text-sm"
+                >HTML</span
+              >
+              <span
+                class="px-3 py-1 bg-purple-500/20 text-purple-300 rounded-full text-sm"
+                >CSS</span
+              >
+              <span
+                class="px-3 py-1 bg-cyan-500/20 text-cyan-300 rounded-full text-sm"
+                >Javascript</span
+              >
+            </div>
+            <a
+              href="https://chessmasterlab.vercel.app/"
+              target="_blank"
+              class="text-indigo-400 hover:text-indigo-300 transition-colors font-medium"
+            >
+              View Site →
+            </a>
+          </div>
+
+          <!-- Project Card 5: Move With Time -->
+          <div
+            class="glass-card rounded-2xl shadow-2xl p-6 sm:p-8 project-card fade-in-right"
+          >
+            <div
+              class="h-2 bg-gradient-to-r from-emerald-500 to-teal-500 rounded-full mb-6"
+            ></div>
+            <!-- Project Image -->
+            <img
+              src="images/IMG_1374.jpg"
+
+              alt="Move With Time"
+              class="w-full h-40 object-cover rounded-xl mb-6"
+            />
+            <h3 class="text-xl sm:text-2xl font-semibold text-white mb-4">
+              Move With Time
+            </h3>
+            <p class="text-gray-300 mb-6 leading-relaxed">
+              A responsive to-do list web-app, that sets reminder in real time and announces tasks prior to due time, when due and marks it as completed.
+              It saves the user the stress of opening the app to mark done tasks or check what tasks are next.
+            </p>
+            <div class="flex flex-wrap gap-2 mb-6">
+              <span
+                class="px-3 py-1 bg-emerald-500/20 text-emerald-300 rounded-full text-sm"
+                >HTML</span
+              >
+              <span
+                class="px-3 py-1 bg-teal-500/20 text-teal-300 rounded-full text-sm"
+                >CSS</span
+              >
+              <span
+                class="px-3 py-1 bg-cyan-500/20 text-cyan-300 rounded-full text-sm"
+                >Javascript</span
+              >
+            </div>
+            <a
+              href="https://movewithtime.vercel.app/"
+              target="_blank"
+              class="text-emerald-400 hover:text-emerald-300 transition-colors font-medium"
+            >
+              View Site →
+            </a>
+          </div>
+
+          <!-- Project Card 6: Gerardizuora -->
+          <div
+            class="glass-card rounded-2xl shadow-2xl p-6 sm:p-8 project-card fade-in-right md:col-span-2 lg:col-span-1"
+          >
+            <div
+              class="h-2 bg-gradient-to-r from-rose-500 to-pink-500 rounded-full mb-6"
+            ></div>
+            <!-- Project Image -->
+            <img
+              src="images/IMG_1372.jpg"
+
+              alt="Gerardizuora"
+              class="w-full h-40 object-cover rounded-xl mb-6"
+            />
+            <h3 class="text-xl sm:text-2xl font-semibold text-white mb-4">
+              Gerardizuora
+            </h3>
+            <p class="text-gray-300 mb-6 leading-relaxed">
+              A clean, polished frontend build featuring a videographers skills and displaying his capabilities in his field.
+              The website allows for visitors and clients to work and book appointments with him, access his social media handles and contect him directly on email or whatsapp.
+            </p>
+            <div class="flex flex-wrap gap-2 mb-6">
+              <span
+                class="px-3 py-1 bg-rose-500/20 text-rose-300 rounded-full text-sm"
+                >HTML</span
+              >
+              <span
+                class="px-3 py-1 bg-pink-500/20 text-pink-300 rounded-full text-sm"
+                >CSS</span
+              >
+              <span
+                class="px-3 py-1 bg-cyan-500/20 text-cyan-300 rounded-full text-sm"
+                >Javascript</span
+              >
+            </div>
+            <a
+              href="https://gerardizuora.vercel.app/"
+              target="_blank"
+              class="text-pink-400 hover:text-pink-300 transition-colors font-medium"
+            >
+              View Site →
+            </a>
+          </div>
         </div>
-        </div>
-         
-       
 
         <!-- Project Card 4: Video Project -->
+
         <div
           class="glass-card rounded-2xl shadow-2xl p-6 sm:p-8 project-card fade-in-up mt-8 flex justify-center"
         >
@@ -431,18 +552,17 @@
       class="py-8 px-4 text-center text-sm text-gray-400 border-t border-white/10"
     >
       <div class="max-w-4xl mx-auto">
-        <p>&copy; 2025 Alexandra Akubueze. All rights reserved.</p>
-        <p class="mt-2">Crafted with ❤️ and lots of coffee</p>
-        <!-- Social Media Icons -->
+        <p>&copy; 2026 Mirage Visuals. All rights reserved.</p>
+        <!-- Social Media I
         <div class="flex justify-center gap-6 mt-4">
           <a href="https://x.com/dara_oluwa84290?s=21" target="_blank" aria-label="Twitter" class="hover:text-indigo-400 transition-colors">
-            <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="images/twitter.svg"/></svg>
+            <img src="images/twitter.svg" alt="Twitter" class="w-6 h-6">
           </a>
           <a href="https://github.com/T3CHI3-HUE" target="_blank" aria-label="github" class="hover:text-indigo-400 transition-colors">
-            <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="images/github.svg"/></svg>
+            <img src="images/github.svg" alt="GitHub" class="w-6 h-6">
           </a>
           <a href="https://www.instagram.com/i.mm_alex?igsh=MWF1N3dtcXYwdzluMQ%3D%3D&utm_source=qr" target="_blank" aria-label="Instagram" class="hover:text-indigo-400 transition-colors">
-            <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="images/instagram.svg"/></svg>
+            <img src="images/instagram.svg" alt="Instagram" class="w-6 h-6">
           </a>
         </div>
       </div>
