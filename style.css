@@ -17,21 +17,20 @@ h3 {
 }
 
 :root {
-  --cream: #3f1414;
-  --gold: #550015;
-  --umber: #800022;
-  --charcoal: #940128;
+  --primary-blue: #051d67;
+  --accent-green: #1ae184;
 }
+
 
 
 .gradient-bg {
   background: linear-gradient(
     135deg,
-    var(--cream) 0%,
-    var(--gold) 30%,
-    var(--umber) 60%,
-    var(--charcoal) 100%
+    var(--primary-blue) 0%,
+    var(--primary-blue) 45%,
+    var(--accent-green) 100%
   );
+
   background-size: 300% 300%;
   animation: gradientShift 18s ease infinite;
 }
@@ -52,7 +51,8 @@ h3 {
 .glass-card {
   background: rgba(255, 246, 237, 0.35);
   backdrop-filter: blur(16px);
-  border: 1px solid rgba(210, 166, 121, 0.45);
+  border: 1px solid rgba(26, 225, 132, 0.35);
+
 }
 
 
@@ -71,7 +71,8 @@ h3 {
   position: absolute;
   height: 3px;
   width: 100%;
-  background: white;
+  background: var(--accent-green);
+
   border-radius: 2px;
   opacity: 1;
   z-index: 2000;
@@ -170,9 +171,10 @@ h3 {
 }
 
 .mobile-menu a:hover {
-  color: #818cf8;
+  color: #1ae184;
   transform: scale(1.1);
 }
+
 
 .fade-in-up {
   opacity: 0;
@@ -248,13 +250,14 @@ h3 {
 }
 
 .neon-glow {
-  box-shadow: 0 0 22px rgba(210, 166, 121, 0.35);
+  box-shadow: 0 0 22px rgba(26, 225, 132, 0.35);
   transition: all 0.3s ease;
 }
 
 .neon-glow:hover {
-  box-shadow: 0 0 48px rgba(210, 166, 121, 0.65);
+  box-shadow: 0 0 48px rgba(26, 225, 132, 0.65);
 }
+
 
 
 @media (max-width: 768px) {
