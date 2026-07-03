@@ -17,23 +17,17 @@ h3 {
 }
 
 :root {
-  --primary-blue: #051d67;
-  --accent-green: #1ae184;
+  --primary-blue: #1A2421;
+  --accent-green: #8dc71d;
 }
+
 
 
 
 .gradient-bg {
-  background: linear-gradient(
-    135deg,
-    var(--primary-blue) 0%,
-    var(--primary-blue) 45%,
-    var(--accent-green) 100%
-  );
-
-  background-size: 300% 300%;
-  animation: gradientShift 18s ease infinite;
+  background: #1A2421;
 }
+
 
 
 @keyframes gradientShift {
@@ -49,11 +43,13 @@ h3 {
 }
 
 .glass-card {
-  background: rgba(255, 246, 237, 0.35);
+  background: rgba(255, 255, 255, 0.08);
   backdrop-filter: blur(16px);
-  border: 1px solid rgba(26, 225, 132, 0.35);
-
+  border: 1px solid rgba(141, 199, 29, 0.35);
+  box-shadow: 0 0 0 1px rgba(141, 199, 29, 0.12), 0 0 24px rgba(141, 199, 29, 0.18);
 }
+
+
 
 
 
