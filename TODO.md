@@ -55,3 +55,10 @@
 - [x] Test accessibility
 - [x] Final polish
 
+## Phase 7: Video Projects Expansion
+- [x] Add Peculiar's Journey.mp4 video card
+- [x] Add Doris wedding reel_2.mp4 video card
+- [x] Add GC reel.mp4 video card
+- [x] Add legacy 1.mp4 video card
+- [x] Add street banter.mp4 video card
+
