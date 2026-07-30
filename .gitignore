@@ -1,0 +1,8 @@
+# Large video files exceeding GitHub's size limits
+videos/Doris wedding reel_2.mp4
+videos/GC reel.mp4
+videos/legacy 1.mp4
+
+# OS files
+.DS_Store
+
